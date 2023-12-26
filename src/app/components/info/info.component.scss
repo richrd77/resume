@@ -1,0 +1,82 @@
+div.info-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    padding: 1em;
+    background-color: black;
+    color: white;
+    padding-right: 0;
+    > div.personal-info {
+        > div.pic {
+            margin-bottom: 1em;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 0 0 4px rgba(255, 255, 255, 1);
+            > img {
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        > div.contacts {
+            > ul {
+                list-style: none;
+                > li {
+                    font-size: 0.8rem;
+                    > a {
+                        display: flex;
+                        gap: 7px;
+                        text-decoration: none;
+                        color: inherit;
+                        align-items: center;
+                        > span.icon {
+                            height: 1em;
+                            width: 1em;
+                            > svg {
+                                height: 100%;
+                                fill: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    > div.skill-info {
+        > ul {
+            list-style: none;
+            font-size: 0.8rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7px;
+            > li {
+                > a {
+                    padding: 7px;
+                    border-radius: 50%;
+                    background-color: white;
+                    color: black;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    > div.qualification-info {
+        > ul {
+            list-style: none;
+            > li {
+                margin: 1em 0;
+                > p.deg {
+                    font-size: 0.8rem;
+                }
+                > p.uni {
+                    font-size: 0.7rem;
+                }
+                > p.time {
+                    font-size: 0.6rem;
+                }
+            }
+        }
+    }
+}
