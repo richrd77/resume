@@ -3,11 +3,13 @@ div.info-wrapper {
     flex-direction: column;
     justify-content: center;
     gap: 1em;
-    padding: 1em;
+    padding: 1em 0;
     background-color: black;
     color: white;
-    padding-right: 0;
     > div.personal-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         > div.pic {
             margin-bottom: 1em;
             width: 200px;
@@ -45,6 +47,7 @@ div.info-wrapper {
         }
     }
     > div.skill-info {
+        padding-left: 1em;
         > ul {
             list-style: none;
             font-size: 0.8rem;
@@ -55,6 +58,7 @@ div.info-wrapper {
         }
     }
     > div.qualification-info {
+        padding-left: 1em;
         > ul {
             list-style: none;
             > li {

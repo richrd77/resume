@@ -56,20 +56,10 @@
     <div class="qualification-info">
         <p class="heading">Qualifications</p>
         <ul>
-            <li>
-                <p class="deg">Bachelors in Engineering (EEE)</p>
-                <p class="uni">PES Inistitute of Technology</p>
-                <p class="time">2008-2012</p>
-            </li>
-            <li>
-                <p class="deg">Pre-university (Science)</p>
-                <p class="uni">Shri Duttagiri Maharaj</p>
-                <p class="time">2006-2008</p>
-            </li>
-            <li>
-                <p class="deg">Higher Secondary Education</p>
-                <p class="uni">Seventh-day adventist</p>
-                <p class="time">2006</p>
+            <li *ngFor="let q of qualifications">
+                <p class="deg">{{q.deg}}</p>
+                <p class="uni">{{q.uni}}</p>
+                <p class="time">{{q.tim}}</p>
             </li>
         </ul>
     </div>
