@@ -44,14 +44,13 @@
     <div class="skill-info">
         <p class="heading">Skills</p>
         <ul>
-            <li><a href="#">C#</a></li>
-            <li><a href="#">dotnet core</a></li>
-            <li><a href="#">angular</a></li>
-            <li><a href="#">Entity Framework</a></li>
-            <li><a href="#">HTML</a></li>
-            <li><a href="#">JavaScript</a></li>
-            <li><a href="#">CSS</a></li>
-            <li><a href="#">Container</a></li>
+            <li *ngFor="let skill of skills">
+                <a href="#">
+                    <mat-chip-row [editable]="false">
+                        {{skill}}
+                    </mat-chip-row>
+                </a>
+            </li>
         </ul>
     </div>
     <div class="qualification-info">

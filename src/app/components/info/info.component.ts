@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class InfoComponent {
 
+  public skills: string[] = [
+    'C#', 'dotnet core', 'angular', 'Entity Framework', 'HTML', 'JavaScript', 'CSS', 'Containers'
+  ];
 }

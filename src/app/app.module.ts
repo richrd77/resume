@@ -4,6 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InfoComponent, BodyComponent } from './components';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatChipsModule } from '@angular/material/chips';
 
 @NgModule({
   declarations: [
@@ -13,7 +16,9 @@ import { InfoComponent, BodyComponent } from './components';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatChipsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
