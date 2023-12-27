@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { experience } from 'src/app/models';
 
 @Component({
   selector: 'ric-timeline',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./timeline.component.scss']
 })
 export class TimelineComponent {
-
+  @Input({ required: true }) public exp!: experience;
 }

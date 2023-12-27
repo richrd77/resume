@@ -1,10 +1,6 @@
 import { Component } from '@angular/core';
+import { qualification } from '../../models';
 
-interface qualification {
-  deg: string;
-  uni: string;
-  tim: string;
-}
 
 @Component({
   selector: 'ric-info',
