@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { InfoComponent, BodyComponent } from './components';
+import { InfoComponent, BodyComponent, TimelineComponent } from './components';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatChipsModule } from '@angular/material/chips';
@@ -12,7 +12,8 @@ import { MatChipsModule } from '@angular/material/chips';
   declarations: [
     AppComponent,
     InfoComponent,
-    BodyComponent
+    BodyComponent,
+    TimelineComponent
   ],
   imports: [
     BrowserModule,
