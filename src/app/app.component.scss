@@ -1,4 +1,7 @@
 div.wrapper {
     display: grid;
     grid-template-columns: 300px 1fr;
+    @media screen and (max-width:614px) {
+        grid-template-columns: 1fr;
+    }
 }
