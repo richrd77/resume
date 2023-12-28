@@ -1,4 +1,35 @@
-div {
-    // background: red;
+div.wrapper {
     height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    padding: 10px;
+    > div.exp {
+        > p.heading {
+            padding-left: 1em;
+        }
+    }
+    > div.quali {
+        > div.qualification-info {
+            padding-left: 1em;
+            > p.heading {
+                padding-left: 1em;
+            }
+            > ul {
+                list-style: none;
+                > li {
+                    margin: 1em 0;
+                    > p.deg {
+                        font-size: 0.8rem;
+                    }
+                    > p.uni {
+                        font-size: 0.7rem;
+                    }
+                    > p.time {
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+        }
+    }
 }

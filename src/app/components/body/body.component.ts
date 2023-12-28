@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { experience } from 'src/app/models';
+import { experience, qualification } from 'src/app/models';
 
 @Component({
   selector: 'ric-body',
@@ -15,4 +15,9 @@ export class BodyComponent {
     { comp: 'HCL Technologies', prof: 'Senior Software Engineer', time: 'Dec 2013 - Jun 2018', desc: 'supported many apps with .NET framework and SharePoint 2013' },
   ];
 
+  public qualifications: qualification[] = [
+    { deg: 'Bachelors in Engineering (EEE)', uni: 'PES Inistitute of Technology', tim: '2008-2012' },
+    { deg: 'Pre-university (Science)', uni: 'Shri Duttagiri Maharaj', tim: '2006-2008' },
+    { deg: 'Higher Secondary Education', uni: 'Seventh-day adventist', tim: '2006' },
+  ];
 }

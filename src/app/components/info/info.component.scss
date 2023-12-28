@@ -57,22 +57,4 @@ div.info-wrapper {
             
         }
     }
-    > div.qualification-info {
-        padding-left: 1em;
-        > ul {
-            list-style: none;
-            > li {
-                margin: 1em 0;
-                > p.deg {
-                    font-size: 0.8rem;
-                }
-                > p.uni {
-                    font-size: 0.7rem;
-                }
-                > p.time {
-                    font-size: 0.6rem;
-                }
-            }
-        }
-    }
 }
