@@ -6,12 +6,13 @@ div.info-wrapper {
     padding: 1em 0;
     background-color: black;
     color: white;
+    height: 100vh;
     > div.personal-info {
         display: flex;
         flex-direction: column;
         align-items: center;
         > div.pic {
-            margin-bottom: 1em;
+            margin-bottom: 10px;
             width: 200px;
             height: 200px;
             border-radius: 50%;
@@ -20,6 +21,12 @@ div.info-wrapper {
             > img {
                 height: 100%;
                 object-fit: contain;
+            }
+        }
+        > div.name {
+            margin-bottom: 1em;
+            > p {
+                font-weight: 600;
             }
         }
         > div.contacts {
@@ -54,7 +61,6 @@ div.info-wrapper {
             display: flex;
             flex-wrap: wrap;
             gap: 7px;
-            
         }
     }
 }
