@@ -8,7 +8,7 @@ div.wrapper {
         left: 10px;
         > div.icon-top {
             width: 2px;
-            background-color: rebeccapurple;
+            background-color: var(--accent-color);
             position: absolute;
             left: 4px;
             bottom: 4.22em;
@@ -17,15 +17,16 @@ div.wrapper {
         > div.icon-circle {
             height: 10px;
             width: 10px;
-            border: 2px solid rebeccapurple;
+            border: 2px solid var(--accent-color);
             position: absolute;
             left: 0;
             top: 1.25em;
             border-radius: 50%;
+            background-color: var(--accent-color);
         }
         > div.icon-bottom {
             width: 2px;
-            background-color: rebeccapurple;
+            background-color: var(--accent-color);
             position: absolute;
             left: 4px;
             bottom: 0;

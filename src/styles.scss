@@ -20,6 +20,10 @@ $resume-theme: mat.define-light-theme(
     box-sizing: border-box;
 }
 
+:root {
+    --accent-color: #69FF47;
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -32,7 +36,7 @@ a {
 }
 
 .heading {
-    border-bottom: 1px solid rebeccapurple;
+    border-bottom: 1px solid var(--accent-color);
     margin-bottom: 10px;
     font-weight: 600;
 }
