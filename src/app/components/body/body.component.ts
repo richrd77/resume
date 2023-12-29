@@ -20,4 +20,13 @@ export class BodyComponent {
     { deg: 'Pre-university (Science)', uni: 'Shri Duttagiri Maharaj', tim: '2006-2008' },
     { deg: 'Higher Secondary Education', uni: 'Seventh-day adventist', tim: '2006' },
   ];
+
+  public get PopulateYears(): string {
+    const startDate = new Date(2013, 11, 4);
+    const endDate = new Date();
+    const months = endDate.getMonth() - startDate.getMonth();
+    const years = endDate.getFullYear() - startDate.getFullYear();
+
+    return months ? `${years} years and ${months} months` : `${years} years`;
+  }
 }
