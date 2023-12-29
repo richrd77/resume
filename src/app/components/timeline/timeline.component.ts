@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, TemplateRef, ViewChild } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { experience } from 'src/app/models';
 
 @Component({
@@ -8,4 +9,16 @@ import { experience } from 'src/app/models';
 })
 export class TimelineComponent {
   @Input({ required: true }) public exp!: experience;
+
+  @ViewChild('det', { static: false, read: TemplateRef }) private det: TemplateRef<any> | null;
+
+  constructor(private dialog: MatDialog) {
+    this.det = null;
+  }
+
+  ShowDetail(): void {
+    if (this.det) {
+      this.dialog.open(this.det);
+    }
+  }
 }

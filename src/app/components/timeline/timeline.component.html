@@ -5,9 +5,13 @@
         <div class="icon-bottom"></div>
     </div>
     <div class="content">
-        <div class="year">{{exp.time}}</div>
-        <div class="comp">{{exp.comp}}</div>
-        <div class="profile">{{exp.prof}}</div>
-        <div class="desc">{{exp.desc}}</div>
+        <div class="year" (click)="ShowDetail()">{{exp.time}}</div>
+        <div class="comp" (click)="ShowDetail()">{{exp.comp}}</div>
+        <div class="profile" (click)="ShowDetail()">{{exp.prof}}</div>
+        <div class="desc" (click)="ShowDetail()">{{exp.desc}}</div>
     </div>
 </div>
+
+<ng-template #det>
+    Dialog
+</ng-template>

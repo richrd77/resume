@@ -7,6 +7,7 @@ import { InfoComponent, BodyComponent, TimelineComponent } from './components';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatChipsModule } from '@angular/material/chips';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { MatChipsModule } from '@angular/material/chips';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatChipsModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

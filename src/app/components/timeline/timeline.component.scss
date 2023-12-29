@@ -39,17 +39,21 @@ div.wrapper {
         > div.year {
             font-size: 0.7rem;
             color: gray;
+            cursor: pointer;
         }
         > div.comp {
             font-size: 0.7rem;
             color: gray;
+            cursor: pointer;
         }
         > div.profile {
             font-size: 0.7rem;
+            cursor: pointer;
         }
         > div.desc {
             font-size: 0.6rem;
             max-width: 60ch;
+            cursor: pointer;
         }
     }
 }
