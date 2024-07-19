@@ -24,7 +24,7 @@ jobs:
         run: npm run build
 
       - name: Copy Html
-        run: cp -a dist/resume/index.html dist/resume/404.html
+        run: cp -a dist/resume/browser/index.html dist/resume/browser/404.html
 
       - name: Deploy
         if: success()
