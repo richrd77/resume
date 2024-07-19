@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { experience, qualification } from 'src/app/models';
+import { experience, qualification } from '../../models';
 
 @Component({
   selector: 'ric-body',
