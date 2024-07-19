@@ -1,6 +1,6 @@
 import { Component, Input, TemplateRef, ViewChild } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { experience } from 'src/app/models';
+import { experience } from '../../models';
 
 @Component({
   selector: 'ric-timeline',
