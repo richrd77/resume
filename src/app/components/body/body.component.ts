@@ -24,8 +24,10 @@ export class BodyComponent {
   public get PopulateYears(): string {
     const startDate = new Date(2013, 11, 4);
     const endDate = new Date();
-    const months = endDate.getMonth() - startDate.getMonth();
-    const years = endDate.getFullYear() - startDate.getFullYear();
+    const months = startDate.getMonth() - endDate.getMonth() + 2;
+    let years = endDate.getFullYear() - startDate.getFullYear();
+
+    years = startDate.getMonth() > endDate.getMonth() ? years - 1 : years;
 
     return months ? `${years} years and ${months} months` : `${years} years`;
   }
