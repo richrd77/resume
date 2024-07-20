@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
 export class InfoComponent {
 
   public skills: string[] = [
-    'C#', 'dotnet core', 'angular', 'Entity Framework', 'HTML', 'JavaScript', 'CSS', 'Containers'
+    'C#', 'TypeScript', '.NET', 'dotnet core', 'ASP.NET MVC', 'Web API', 'LINQ', 'Entity Framework', 'EF Core', 'Angular', 'HTML & CSS', 'JavaScript', 'JQuery', 'SQL', 'IBM DB2', 'Oracle Db', 'Node Js', 'Azure devops ci/cd pipelines', 'Docker', 'xUnit'
   ];
 }

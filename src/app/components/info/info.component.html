@@ -48,11 +48,7 @@
         <p class="heading">Skills</p>
         <ul>
             <li *ngFor="let skill of skills">
-                <a href="#">
-                    <mat-chip-row [editable]="false">
-                        {{skill}}
-                    </mat-chip-row>
-                </a>
+                {{skill}}
             </li>
         </ul>
     </div>

@@ -13,6 +13,7 @@ div.wrapper {
         max-height: 100vh;
         > p.heading {
             padding-left: 1em;
+            font-size: 1.5rem;
         }
     }
     > div.quali {
@@ -20,6 +21,7 @@ div.wrapper {
             padding-left: 1em;
             > p.heading {
                 padding-left: 1em;
+                font-size: 1.5rem;
             }
             > ul {
                 list-style: none;
@@ -27,13 +29,13 @@ div.wrapper {
                     margin: 1em;
                     margin-right: 0;
                     > p.deg {
-                        font-size: 0.8rem;
+                        font-size: 1.2rem;
                     }
                     > p.uni {
-                        font-size: 0.7rem;
+                        font-size: 1.2rem;
                     }
                     > p.time {
-                        font-size: 0.6rem;
+                        font-size: 1rem;
                     }
                 }
             }

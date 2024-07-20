@@ -25,6 +25,7 @@ div.info-wrapper {
         }
         > div.name {
             margin-bottom: 1em;
+            font-size: 2rem;
             > p {
                 font-weight: 600;
             }
@@ -54,13 +55,20 @@ div.info-wrapper {
         }
     }
     > div.skill-info {
-        padding-left: 1em;
+        padding-left: 2.5em;
+        > p {
+            font-size: 1.5rem;
+        }
         > ul {
             list-style: none;
-            font-size: 0.8rem;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 7px;
+            font-size: 1.2rem;
+            // display: flex;
+            // flex-wrap: wrap;
+            // gap: 1em;
+            // >li {
+            //     border: 1px solid;
+            //     padding: 10px;
+            // }
         }
     }
 }
