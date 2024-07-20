@@ -6,7 +6,7 @@ div.info-wrapper {
     padding: 1em 0;
     background-color: black;
     color: white;
-    height: 100vh;
+    min-height: 100vh;
     > div.personal-info {
         display: flex;
         flex-direction: column;
