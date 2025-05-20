@@ -1,0 +1,12 @@
+<section class="edu-wrapper">
+    <h2>Education</h2>
+    <div class="college" *ngFor="let c of edus">
+        <span class="stream">{{c.stream}},</span>
+        <span class="college">{{c.college}}</span>
+        <div class="years">
+            <span class="from">{{c.from}}</span>
+            <span>-</span>
+            <span class="to">{{c.to}}</span>
+        </div>
+    </div>
+</section>

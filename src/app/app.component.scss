@@ -1,0 +1,21 @@
+section.first-row {
+    display: flex;
+    > ric-summary {
+        flex: 0.7;
+    }
+    > img {
+        flex: 0.3;
+        height: 200px;
+        object-fit: contain;
+    }
+}
+section.second-row {
+    > section.further {
+        > ric-skills {
+        }
+        > ric-education {
+        }
+    }
+    > ric-experience {
+    }
+}

@@ -1,0 +1,17 @@
+div.skills-wrapper {
+    > div.skills-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 10px;
+        > span {
+            background-color: #132035;
+            color: white;
+            border-radius: 16px;
+            padding: 6px 12px;
+            font-size: 14px;
+            white-space: nowrap;
+        }
+    }
+}
+
