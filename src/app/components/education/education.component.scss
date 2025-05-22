@@ -1,7 +1,11 @@
 section.edu-wrapper {
+    background-color: var(--color-acc);
+    color: var(--color-pri);
+    padding: 1em;
+    height: 100%;
     > div.college {
         margin-bottom: 10px;
-        >span {
+        > span {
             display: inline-block;
             font-weight: 900;
             &.college {
@@ -9,9 +13,13 @@ section.edu-wrapper {
             }
         }
         > div.years {
-            color: gray;
-            >span:nth-last-of-type(2){
+            // color: gray;
+            > span:nth-last-of-type(2) {
                 margin: 0 10px;
+            }
+            > span.from,
+            > span.to {
+                text-transform: capitalize;
             }
         }
         &:last-of-type {

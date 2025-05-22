@@ -1,0 +1,10 @@
+section.summary-wrapper {
+    background-color: var(--color-acc);
+    color: var(--color-pri);
+    padding: 1em;
+    height: 100%;
+    > summary {
+        > strong {
+        }
+    }
+}

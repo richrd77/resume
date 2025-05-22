@@ -2,9 +2,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: inherit;
+}
+
+:root {
+    --text-xlarge: 22px;
+    --text-large: 20px;
+    --text-normal: 16px;
+    --text-small: 12px;
+    --color-bg: #eaeaea;
+    --color-pri: #040b25;
+    --color-acc: #ffa300;
+    --color-sec: #6e552d;
+    --box-sec: white;
+}
+
+html,
+body {
+    font-size: var(--text-normal);
 }
 
 body {
     min-height: 100vh;
-    background-color: #F4F0FA;
+    background-color: var(--color-bg);
+}
+
+h2 {
+    font-size: var(--text-large);
 }

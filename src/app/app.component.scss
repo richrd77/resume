@@ -1,21 +1,53 @@
-section.first-row {
-    display: flex;
-    > ric-summary {
-        flex: 0.7;
-    }
-    > img {
-        flex: 0.3;
-        height: 200px;
-        object-fit: contain;
-    }
+@mixin box {
+    border-radius: 10px;
+    overflow: hidden;
 }
-section.second-row {
-    > section.further {
-        > ric-skills {
+
+@mixin wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+section.wrapper {
+    @include wrapper();
+    min-height: calc(100vh - 3.6em);
+    padding: 1em;
+    padding-top: 0;
+    > section.left {
+        @include wrapper();
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        > section.top {
+            @include box();
+            height: 100%;
+            > ric-summary {
+            }
         }
-        > ric-education {
+        > section.bottom {
+            @include wrapper();
+            height: 100%;
+            > section.bottom-left {
+                @include box();
+                height: 100%;
+                > ric-skills {
+                }
+            }
+            > section.bottom-right {
+                @include box();
+                height: 100%;
+                > ric-education {
+                }
+            }
         }
     }
-    > ric-experience {
+    > section.right {
+        @include box();
+        height: 100%;
+        > ric-experience {
+        }
     }
 }
