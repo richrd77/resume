@@ -1,0 +1,23 @@
+section.section-wrapper {
+    > ul {
+        list-style: none;
+        display: flex;
+        gap: 1em;
+        flex-wrap: wrap;
+        > li {
+            > img {
+                display: block;
+                height: 32px;
+                object-fit: contain;
+            }
+        }
+        > li:nth-of-type(2) {
+            > img {
+            }
+        }
+        > li:nth-of-type(3) {
+            > img {
+            }
+        }
+    }
+}

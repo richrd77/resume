@@ -1,15 +1,12 @@
-section.skills-wrapper {
-    background-color: var(--box-sec);
-    padding: 1em;
-    height: 100%;
+section.section-wrapper {
     > div.skills-wrap {
         display: flex;
         flex-wrap: wrap;
         gap: 8px;
         padding: 10px;
         > span {
-            background-color: var(--color-pri);
-            color: var(--color-bg);
+            background-color: var(--color-acc);
+            color: var(--color-pri);
             border-radius: 4px;
             padding: 6px 12px;
             font-size: 14px;

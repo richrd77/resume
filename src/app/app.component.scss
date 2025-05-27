@@ -20,7 +20,7 @@ section.wrapper {
         @include wrapper();
         height: 100%;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr;
         > section.top {
             @include box();
             height: 100%;
@@ -38,8 +38,21 @@ section.wrapper {
             }
             > section.bottom-right {
                 @include box();
+                @include wrapper();
                 height: 100%;
-                > ric-education {
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 0.5fr;
+                > section.bottom-right-top {
+                    @include box();
+                    height: 100%;
+                    > ric-education {
+                    }
+                }
+                > section.bottom-right-bottom {
+                    @include box();
+                    height: 100%;
+                    > ric-tools {
+                    }
                 }
             }
         }

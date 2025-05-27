@@ -5,11 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss'
 })
-export class SkillsComponent {
-  public skills: string[] = [
-    'dotnet',
-    'angular',
-    'docker',
-    'cicd'
-  ];
-}
+export class SkillsComponent { }
