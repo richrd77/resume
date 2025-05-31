@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: inherit;
+    color: inherit;
 }
 
 :root {
@@ -10,11 +11,10 @@
     --text-large: 20px;
     --text-normal: 16px;
     --text-small: 12px;
-    --color-bg: #eaeaea;
-    --color-pri: #040b25;
-    --color-acc: #ffa300;
-    --color-sec: #6e552d;
-    --box-sec: white;
+    --color-bg: #ffffff;
+    --color-text: #232324;
+    --color-acc: #008456;
+    --color-sec: #a1b5c1;
 }
 
 /* Plus Jakarta Sans Regular */
@@ -57,7 +57,8 @@ body {
 
 body {
     min-height: 100vh;
-    background-color: var(--color-bg);
+    background-color: #cbd5e1;
+    color: var(--color-text);
 }
 
 h2 {
@@ -67,8 +68,17 @@ h2 {
 section.section-wrapper {
     padding: 1em;
     height: 100%;
-    background-color: var(--box-sec);
+    backdrop-filter: blur(50px);
+    background-color: var(--color-bg);
+    color: var(--color-text);
     &.highlight {
-        background-color: var(--color-acc);
+        background-color: var(--color-sec);
+        color: var(--color-text);
     }
 }
+
+// #e2dfd2 & #fefefe - light bg
+// #dbdac3 - pri
+// #000000 - text
+// #ffffff -
+// #888888 - sec
